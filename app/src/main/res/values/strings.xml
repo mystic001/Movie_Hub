@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Movies Hub</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Action">Action</string>
+    <string name="Comedy">Comedy</string>
+    <string name="Drama">Drama</string>
+    <string name="user_name">spot@catchat.com</string>
+    <string name="imagedescription">imagedescription</string>
+    <string name="name_of_current_genre">Name of Current genre</string>
+    <string name="genres_name">Genres name</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="display_picture">display picture</string>
+    <string name="textview">TextView</string>
+    <string name="imageview">imageview</string>
+    <string name="story_line">Story line</string>
+    <string name="completestory">completestory</string>
+    <string name="download">Download</string>
+    <string name="movietitle">movietitle</string>
+    <string name="release_date">release date</string>
+
+</resources>
