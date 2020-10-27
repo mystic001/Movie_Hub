@@ -78,6 +78,7 @@ public class DetailFragment extends Fragment {
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         assert activity != null;
         activity.getSupportActionBar();
+        activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         return view;

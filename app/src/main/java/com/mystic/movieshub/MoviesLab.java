@@ -60,6 +60,38 @@ public class MoviesLab {
                 "perhaps taking a break from shooting Netflix's 6 Underground -- this movie could've been a disaster","https://assets3.thrillist.com/v1/image/2864985/1584x3000/scale;jpeg_quality=60.jpg");
         actionMovieList.add(nine);
 
+        Movie ten = new Movie("Mulan",5,2020,"The latest installment in Disney’s never-ending list of live-action remakes of animated classics was " +
+                "scheduled to hit theaters on March 27, but it was postponed until late July due to the coronavirus pandemic—but it looks like it'll be worth the wait. While this" +
+                " version doesn't have a talking dragon sidekick or multiple song-and dance-breaks, Mulan appears to be even more of a badass now than she was in 1998.",
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ww-1984-warner-1585834209.jpg?crop=1.00xw:0.801xh;0,0.0150xh&resize=768:*");
+        actionMovieList.add(ten);
+
+        Movie eleven = new Movie("Wonder Woman 1984",4,2017,"After the (much-deserved) massive success of 2017’s Wonder Woman, it makes sense that " +
+                "director Patty Jenkins and star Gal Gadot would dive immediately back into the sequel. It’ll be out later this summer, with Wonder Woman going head-to-head with " +
+                "Kristen Wiig’s villainous Cheetah. Though it looked like Chris Pine’s role as Steve Trevor came to an end at the close of the first film, he does make an appearance" +
+                " in the sequel’s trailer, and that, combined with the fact that superhero movies play by no one’s rules, means anything could happen come August 14.","");
+        actionMovieList.add(eleven);
+
+        Movie twelve = new Movie("Black Widow",3,2018,"Since Scarlett Johansson’s Black Widow, a.k.a. Natasha Romanoff, first entered the Marvel Universe" +
+                " in Iron Man 2, the world has been holding its breath for a standalone movie. Those dreams will finally come true this year, as Black Widow is backed by her family–played b" +
+                "y Florence Pugh, Rachel Weisz, and David Harbour–on a mission to settle some unfinished business buried deep in her past.","");
+        actionMovieList.add(twelve);
+
+        Movie thirteen = new Movie("No Time to Die",5,2019,"James Bond has a bit of a sexism problem, but the 25th installment in the British spy series " +
+                "already looks to be miles ahead of its predecessors due to the fact that it was co-written by Killing Eve creator Phoebe Waller-Bridge and features a theme song performed " +
+                "by Billie Eilish. We can’t wait to see 007 go full Fleabag–but who will play his Hot Priest?!","");
+        actionMovieList.add(thirteen);
+
+        Movie fourteen = new Movie("The Eternals",5,2020,"Just when you thought Marvel couldn’t find any more huge stars to join its cinematic universe... " +
+                "That’s right, Angelina Jolie and Salma Hayek are now Avengers-adjacent, as are half the Stark children and, of course, #RippedKumailNanjiani. Almost all of them will play " +
+                "members of the titular alien race, who are working together to protect Earth from the Deviants, sworn enemies of the Eternals. Welcome to the next phase of the Marvel un" +
+                "iverse.","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/67334917-10157314311827488-1938253040570073088-o-0-1585754443.jpg?resize=768:*");
+        actionMovieList.add(fourteen);
+
+        Movie fifteen = new Movie("Top Gun: Maverick",4,2020,"Apparently, there’s no such thing as “too long” to wait between franchise installments" +
+                ". Thirty-four years after the original Top Gun, Tom Cruise will reprise his role as Navy aviator Maverick. According to the official plot synopsis, he’ll be confronting" +
+                " ghosts from his past while leading a team of pilot trainees on a highly dangerous mission–should they choose to accept it. (Oops, wrong Tom Cruise franchise.)","");
+        actionMovieList.add(fifteen);
     }
 
     public void comedyGenerator(){
@@ -138,6 +170,16 @@ public class MoviesLab {
                 "that you can still totally find it funny as an adult). The SpongeBob Movie: Sponge Out of Water was both critically loved and a box office hit, so the chances of a third movie were always good. I mean, Keanu Reeves, Awkwafina, " +
                 "and Snoop Dog will be in this. How can you not love it?","https://pyxis.nymag.com/v1/imgs/c6e/f39/e5fb0e74ad5c3a7cccd2b93a1434ea634b-miss-juneteenth.rhorizontal.w700.jpg");
         comedyMovieList.add(thirteen);
+
+        Movie fourteen = new Movie("Fast & Furious 9",5,2020,"Also known as F9, the follow-up to 2017’s The Fate of the Furious picks up with Vin Diesel’s character, Dominic Toretto, who is now in semi-retirement on" +
+                " a farm and has a kid named after the late Paul Walker’s character. Charlize Theron and John Cena also star in the ninth movie of the franchise.","https://m.media-amazon.com/images/M/MV5BZWQ3ZmQ5OTAtMGYyOS00NTA0LThlMGItZDU3NTBlMWZjYzYwXkEyXkFqcGdeQXVyOTkwMTc4ODQ@._V1_UX99_CR0,0,99,99_AL_.jpg");
+        comedyMovieList.add(fourteen);
+
+
+        Movie fifteen = new Movie("The New Mutants",3,2020,"Maisie Williams stars as Rahne Sinclair/Wolfsbane, one of several teen mutants who are just discovering their powers while being " +
+                "hidden at a secret facility.","https://m.media-amazon.com/images/M/MV5BYzEzYWQyMTktN2ZjNi00ZTgyLWJlODItZjc3ZGYzOGM4NTM2XkEyXkFqcGdeQXVyNTYwNjM1MTQ@._V1_UY99_CR43,0,99,99_AL_.jpg");
+        comedyMovieList.add(fifteen);
+
     }
 
     public void DramaGenerator(){
@@ -223,6 +265,20 @@ public class MoviesLab {
                 " than any corrupt politician or rapacious outsider. As an inadvertent coronavirus-era release, it also offers a message that’s the perfect mix of encouraging and unsettling — that communities can pull together where governments fail," +
                 " but that a sense of community has to be earned.","https://pyxis.nymag.com/v1/imgs/92c/033/5fddd4bd6561948b3444716c30558cafcc-16-bacurao-cannes.rhorizontal.w700.jpg");
         dramaMovieList.add(thirteen);
+
+        Movie fourteen = new Movie("Super Intellligence",5,2020,"Not a lot is known about Melissa McCarthy’s latest collaboration with Ben Falcone, her " +
+                "husband and producing partner. What we do know for sure is that McCarthy will play Carol Peters, who is chosen by the government to be observed by a superintelligent " +
+                "A.I. with the voice of James Corden, a situation that will undoubtedly set in motion a series of wacky mishaps. The movie is slated to be released on the new streaming" +
+                " service, HBO Max, so you won’t even have to leave your house to sit back and watch McCarthy’s particular brand of hilarity ensue.","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/76th-annual-golden-globe-awards-pictured-melissa-mccarthy-news-photo-1585754301.jpg?resize=768:*");
+        dramaMovieList.add(fourteen);
+
+        Movie fifteen = new Movie("Free Guy",4,2020,"When a certain unnamed movie in early 2019 tried to explore what happens when a video game character " +
+                "becomes aware of his situation (no spoilers here!), it was a disastrous flop. Free Guy, however, appears to be taking a more palatable approach to a similar plot: Ryan Reynolds" +
+                " plays a video game character who becomes sentient and attempts to become the game-saving hero before the entire game is taken offline. If the trailer is any indication, it’ll be" +
+                " full of Deadpool-style humor, and we’ll get to see Jodie Comer as something other than a stylish serial killer (though, she's still equipped with a Villanelle-approved accent and " +
+                "wig)","https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg");
+        dramaMovieList.add(fifteen);
+
 
 
     }
