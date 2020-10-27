@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Movie implements Serializable {
     private String name;
     private int rating;
+    private String posterImages;
     private int year;
     private  String image;
     private String description;
@@ -47,6 +48,14 @@ public class Movie implements Serializable {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getPosterImages() {
+        return posterImages;
+    }
+
+    public void setPosterImages(String posterImages) {
+        this.posterImages = posterImages;
     }
 
     public String getDescription() {

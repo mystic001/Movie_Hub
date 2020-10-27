@@ -65,7 +65,7 @@ public class DetailFragment extends Fragment {
 
         Glide.with(Objects.requireNonNull(getActivity()))
                 .asBitmap()
-                .load(Uri.parse(movie.getImage()))
+                .load(Uri.parse(movie.getPosterImages()))
                 .placeholder(R.drawable.camera)
                 .into(real);
         TV_movietitle.setText(movie.getName());
@@ -77,7 +77,6 @@ public class DetailFragment extends Fragment {
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         assert activity != null;
         activity.getSupportActionBar();
-
 
 
         return view;

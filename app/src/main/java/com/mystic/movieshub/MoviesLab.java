@@ -1,5 +1,4 @@
 package com.mystic.movieshub;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,12 +8,76 @@ public class MoviesLab {
     List<Movie> comedyMovieList = new ArrayList<>();
     List<Movie> dramaMovieList = new ArrayList<>();
 
+    String[] actionmoviepposterurl = {
+            "https://m.media-amazon.com/images/M/MV5BYjA5YjA2YjUtMGRlNi00ZTU4LThhZmMtNDc0OTg4ZWExZjI3XkEyXkFqcGdeQXVyNjUyNjI3NzU@._V1_UY268_CR16,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMDY1NzhlZDAtYTM1Mi00NjU3LTk4MWQtZDgxZGQxYzhmZTNhXkEyXkFqcGdeQXVyNzIzMTc2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BNDJiZDliZDAtMjc5Yy00MzVhLThkY2MtNDYwNTQ2ZTM5MDcxXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMDJiNzUwYzEtNmQ2Yy00NWE4LWEwNzctM2M0MjE0OGUxZTA3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMjkxNDQxZWYtZTBjOS00YjQ5LTk4ODgtMGFkODMyYTI2NTljXkEyXkFqcGdeQXVyODUwMjI3MzU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BN2M5MzE4NTMtMDNmOC00ZDQyLTkwYjUtZWY5ZDQ1MjYwNDZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMzQ3NTQxMjItODBjYi00YzUzLWE1NzQtZTBlY2Y2NjZlNzkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMmIzYzUyZTktODVlYy00ZTdjLWFkYzEtNTMyZTY3MWVhNzQ0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BZGVhZDBlZjgtMGNmNi00OTIyLWI1NzQtMzE5ZWQ0NzFmMjg0XkEyXkFqcGdeQXVyMTA2OTQ3MTUy._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BMzFiODE0ZDUtN2IxNC00OTI5LTg4OWItZTE2MjU4ZTk2NjM5XkEyXkFqcGdeQXVyNDYzODU1ODM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BYmQ3MTY4NDUtOWExZi00OGQxLTgzNmQtODI1MTFkZjMyMDY0XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BOTYzMTlhM2ItMmFkYi00ZTJhLTg3MWQtNzM1NTRkM2NiNzRjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY268_CR8,0,182,268_AL_.jpg",
+    "https://m.media-amazon.com/images/M/MV5BNTEyYTA5YWYtYmIxYS00NWRlLWExNjMtNjliZmVlZDgxNTBlXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg"};
+
+    String[] comedyMoviesPoster ={
+            "https://m.media-amazon.com/images/M/MV5BMTlkMmVmYjktYTc2NC00ZGZjLWEyOWUtMjc2MDMwMjQwOTA5XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMjZjNzRjNmQtOGJlMS00NzVkLWFmYWQtYjIxMzJmYTkwMjhhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYzkxMzMzOTgtNmZhMS00MGM0LTk3MzUtMjE1MzI4MzU5ZjkzXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BNmRkZmZiNzUtMzgwYy00NTEzLWE2NjctMmI3NGI5ZTBiNDdkXkEyXkFqcGdeQXVyNzE3ODQxNjU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMThkYWYwMzQtZTUxMi00YTJmLWFiOTItNTAxMWY5ZjE4MmMxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BOGRiODEzM2QtOTUyYi00MWRlLTg4MzMtZGI0YmUzNWUyMjQ0XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BNzU3ZTI1OTktNjVkNy00OWEzLWIyNzAtMWQ5YjRkZDU1ZjAxXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZDczYjkxYzMtMGM2Yy00MDg0LWIwZGQtMjYwZWEzNDFmMzY5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYTlkNWRjMDMtYmVlYS00NTlkLWI5OTUtZWY1YmZmNTNkZGFjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZTg3NWFkN2ItOTdjMi00NDk4LTllMDktNGZiNTUxYmZmMjlmXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BNzU1ZTE4YzAtOWNkYi00YWE4LThmY2YtMDNlYzU2ZTgxYTc2XkEyXkFqcGdeQXVyODQzNTE3ODc@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMjdhZmUxZTMtOWRmZS00ZmY0LTgxMzMtZjRjZDg2MTExY2IyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BODIwMmQxNDktOWZjZC00NWI4LTg1NjktMGViOTE4ZTA4ZGY5XkEyXkFqcGdeQXVyNjg5MjU3NjE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY268_CR1,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZDQ2NTdmNDgtMGIwMS00ODE2LTk5M2EtZGZhYzc4MWRlNTU3XkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    };
+
+
+    String[] dramaMoviesPoster ={
+            "https://m.media-amazon.com/images/M/MV5BNzE4ZDEzOGUtYWFjNC00ODczLTljOGQtZGNjNzhjNjdjNjgzXkEyXkFqcGdeQXVyNzE5ODMwNzI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZjQ1YTM4M2UtMTQxNS00YjdjLTgwZGYtZTgzYmFiYjFkYzNlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMjBkMDZkNjctNmZhNi00Mzc5LTk0OTctNzFlMDExYzM3ZDNhXkEyXkFqcGdeQXVyNDY2MjcyOTQ@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMjI4MjM1NTctMmQwYy00ZDE3LTllOTAtODRlNjJkMTg1MDAwXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZDcxZDU1NWEtMDU4NC00ZTJmLWE1NWUtM2Y2ZjEyZjliZTUzXkEyXkFqcGdeQXVyMjI3NDAyNg@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BODhlYTYzM2MtMGM5ZC00MjRlLWI5NTYtMDNmZGE0ZTAyNWVmXkEyXkFqcGdeQXVyMjI3NDAyNg@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BOGUzZjZhMmUtZDE4Yi00NTI0LWJlMDUtNTU1OWI2ZWM1MzBmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMGUzMGEzM2UtMDg2Ny00Yjk1LTgxMTctMWI1ZGM0ZDBiYjgxXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYjBjMTgyYzktN2U0Mi00YTJhLThkZDQtZmM1ZDlmNWMwZDQ3XkEyXkFqcGdeQXVyMDU5MDEyMA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYmUxYzAxMTgtNzhjNC00YjI1LTlmMTItOGU0ZmZjZmQ5NmVlXkEyXkFqcGdeQXVyODY3Nzc0OTk@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMWNkOWNlNmEtYmRhZC00ZGRjLWIwZjgtMTJiNDhhNTg2YjkzXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYmM3MDlkNDItN2RhNy00Mjc2LWJmNjktODk4NGE0NmRmMTFkXkEyXkFqcGdeQXVyODE0OTU5Nzg@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYjc1N2M1YjMtYzBiNi00NGFiLThkN2QtY2EwZGU5MDRkODAzXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BNWU2NzEyMDYtM2MyOS00OGM3LWFkNzAtMzRiNzE2ZjU5ZTljXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    };
+
     public MoviesLab(){
         actionGenerator();
         comedyGenerator();
         DramaGenerator();
     }
 
+
+////This method is added cos at the time when the app was first designed the images we use were not good enough for poster images and we didnt want to remove them so we decided to create dis
+    //method to add poster images
+    public void addPosterImages(String[] movieUrl, List<Movie> container){
+        for(int i = 0; i < movieUrl.length ; i++){
+            Movie movie;
+            movie = container.get(i);
+            movie.setPosterImages(movieUrl[i]);
+        }
+    }
 
     public void actionGenerator(){
         Movie one = new Movie("Bloodshot",4,2020,"With F9, the next chapter in the NOS-powered Fast and Furious saga, pushed to 2021 because of the outbreak" +
@@ -92,6 +155,8 @@ public class MoviesLab {
                 ". Thirty-four years after the original Top Gun, Tom Cruise will reprise his role as Navy aviator Maverick. According to the official plot synopsis, he’ll be confronting" +
                 " ghosts from his past while leading a team of pilot trainees on a highly dangerous mission–should they choose to accept it. (Oops, wrong Tom Cruise franchise.)","");
         actionMovieList.add(fifteen);
+
+        addPosterImages(actionmoviepposterurl,actionMovieList);
     }
 
     public void comedyGenerator(){
@@ -128,6 +193,8 @@ public class MoviesLab {
                 "who's just on the wrong side of creepy. Then she just kind of...sticks around on campus, unsure where to go from here and hanging out with a bunch of current students. It's a sweet and honest " +
                 "look at the stresses and pains of being a 30-something (and a creative professional) who just doesn't feel like she can face the world ahead. It's also a pretty relevant quarantine watch, TBH.","https://pyxis.nymag.com/v1/imgs/17e/4fd/d075f49325b779620c215300ad19001be5-bull-.rhorizontal.w700.jpg");
         comedyMovieList.add(five);
+
+        //WE stopped herre     
 
         Movie six = new Movie("Emma",4,2020,"This will be a controversial statement among my fellow MC editors, but Emma is my favorite Jane Austen book (I know!!). It's so snarky " +
                 "and has a deliriously happy ending without letting its fallible heroine off the hook for her (often-terrible) behavior. Beyond the effervescent Anya Taylor-Joy, consider at how many incredible actors " +
@@ -179,6 +246,8 @@ public class MoviesLab {
         Movie fifteen = new Movie("The New Mutants",3,2020,"Maisie Williams stars as Rahne Sinclair/Wolfsbane, one of several teen mutants who are just discovering their powers while being " +
                 "hidden at a secret facility.","https://m.media-amazon.com/images/M/MV5BYzEzYWQyMTktN2ZjNi00ZTgyLWJlODItZjc3ZGYzOGM4NTM2XkEyXkFqcGdeQXVyNTYwNjM1MTQ@._V1_UY99_CR43,0,99,99_AL_.jpg");
         comedyMovieList.add(fifteen);
+
+        addPosterImages(comedyMoviesPoster,comedyMovieList);
 
     }
 
@@ -279,8 +348,7 @@ public class MoviesLab {
                 "wig)","https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg");
         dramaMovieList.add(fifteen);
 
-
-
+        addPosterImages(dramaMoviesPoster,dramaMovieList);
     }
 
     public List<Movie> getActionMovieList(){
