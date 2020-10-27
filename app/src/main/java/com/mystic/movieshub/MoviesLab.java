@@ -285,9 +285,9 @@ public class MoviesLab {
 
 
     public MoviesLab(){
-        actionGenerator();
-        comedyGenerator();
-        DramaGenerator();
+        finalMovieGenerator(actionMovies,actionMovieList,actionmoviepposterurl);//actionGenerator();
+        finalMovieGenerator(comedymovies,comedyMovieList,comedyMoviesPoster);//comedyGenerator();
+        finalMovieGenerator(dramaMovies,dramaMovieList,dramaMoviesPoster);//DramaGenerator();
     }
 
 
@@ -301,28 +301,15 @@ public class MoviesLab {
         }
     }
 
-
     private void movieGenerator(Movie[] movieArray, List<Movie> movieContainer){
         movieContainer.addAll(Arrays.asList(movieArray));
     }
 
+    private void finalMovieGenerator(Movie[] movieArray, List<Movie> movieContainer,String[] movieposter){
+        movieGenerator(movieArray,movieContainer);
+        addPosterImages(movieposter,movieContainer);
+    }
 
-    //generates action movies
-    private void actionGenerator(){
-        movieGenerator(actionMovies,actionMovieList);
-        addPosterImages(actionmoviepposterurl,actionMovieList);
-    }
-//Generates comedy movies
-    private void comedyGenerator(){
-        movieGenerator(comedymovies,comedyMovieList);
-        addPosterImages(comedyMoviesPoster,comedyMovieList);
-
-    }
-//generates drama
-    private void DramaGenerator(){
-        movieGenerator(dramaMovies,dramaMovieList);
-        addPosterImages(dramaMoviesPoster,dramaMovieList);
-    }
 
     public List<Movie> getActionMovieList(){
         return actionMovieList;
