@@ -1,4 +1,4 @@
 # Movie_Hub
 This is an android application for showing different genre of movies.
 This application makes use of drawerlayout and also fragments
-![movies list](https://github.com/mystic001/Movie_Hub/blob/master/WhatsApp Image 2020-12-23 at 08.41.48 (1).jpeg?raw=true)
+![movies list](https://github.com/mystic001/Movie_Hub/blob/master/first_image.jpeg?raw=true)
